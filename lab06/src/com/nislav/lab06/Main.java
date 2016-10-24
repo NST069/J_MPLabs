@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         About();
-        Files.SetsReader("C:\\Users\\Nikola Slavich\\IdeaProjects\\MPLabs\\lab06\\src\\com\\nislav\\lab06\\data.txt");
+        Files.SetsReader("src\\com\\nislav\\lab06\\data.txt");
         System.out.println(NumSet.ns.get(0));
         System.out.println(NumSet.ns.get(1));
-        System.out.println(NumSet.ns.get(0).cross(NumSet.ns.get(1)));
+        System.out.println(NumSet.ns.get(0).cross(NumSet.ns.get(1)).cross(NumSet.ns.get(2)));
         System.out.println(NumSet.ns.get(0).unite(NumSet.ns.get(1)));
     }
 

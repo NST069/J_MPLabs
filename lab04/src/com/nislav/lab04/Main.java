@@ -21,7 +21,7 @@ public class Main {
     }
 
     public static long factorial(int n){
-        int x=1;
+        long x=1;
         for(int i=1;i<=n;i++)
             x*=i;
         return x;

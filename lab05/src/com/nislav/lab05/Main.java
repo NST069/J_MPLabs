@@ -1,11 +1,14 @@
 package com.nislav.lab05;
+
+
+
 //TODO: remove poop from this code
 public class Main {
 
     public static void main(String[] args) {
         About();
-        ComplexNumber n1 = new ComplexNumber(1, 2);
-        ComplexNumber n2 = new ComplexNumber(5, 4);
+        ComplexNumber n1 = new ComplexNumber(1, -5);
+        ComplexNumber n2 = new ComplexNumber(5, 2);
         System.out.println(n1);
         System.out.println(n2);
         n1.plus(n2);
@@ -19,7 +22,6 @@ public class Main {
         n1.pow(5);
         System.out.println(n1);
         n1.root(5);
-        System.out.println(n1);
     }
 
     public static void About(){

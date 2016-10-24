@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         About();
-        ArrayList<Integer> al = Files.Reader("C:\\Users\\Nikola Slavich\\IdeaProjects\\MPLabs\\lab07\\src\\com\\nislav\\lab07\\data.txt");
+        ArrayList<Integer> al = Files.Reader("src\\com\\nislav\\lab07\\data.txt");
         ArrayList<Integer> newal=new ArrayList<Integer>();
         while(al.size()!=1) {
             for(int i=0;i<al.size();i+=2){
@@ -15,7 +15,7 @@ public class Main {
                 else newal.add(al.get(i)+al.get(i+1));
             }
             al = new ArrayList<Integer>(newal);
-            //System.out.println(al);
+            System.out.println(al);
             newal.clear();
         }
         System.out.println("Result: "+al.get(0));

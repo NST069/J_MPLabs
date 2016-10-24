@@ -16,10 +16,10 @@ public class Main {
         ArrayList<String> strings = new ArrayList<>();
         getAbout();
         try {
-            while (n == 0) {
+            while (n <= 0) {
                 System.out.print("Number of words: ");
                 n = Integer.parseInt(reader.readLine());
-                if (n == 0) System.out.println("Please enter a correct number of words");
+                if (n <= 0) System.out.println("Please enter a correct number of words");
             }
             for (int i = 0; i < n; i++) {
                 strings.add(reader.readLine());
